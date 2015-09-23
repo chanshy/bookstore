@@ -1,0 +1,184 @@
+.managetab{
+	position: fixed;
+	top:100px;
+	left: 60px;
+	text-align: center;
+}
+.managetab li{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom:solid 1px; 
+	cursor: pointer;
+}
+.managetab li:hover{
+	color: #fcc828;
+}
+
+.active{
+	color: #fcc828;
+}
+.infoshow{
+	position: relative;
+	width: 800px;
+	background-color:#fff;
+	min-height: 400px;
+	margin: 150px auto;
+	padding: 20px 60px;
+	padding-bottom: 100px;
+}
+.infoshow fieldset{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.infoshow input{
+	border: none;
+	height:40px;
+	width: 100%;
+	padding: 5px 10px;
+	border-bottom: solid 1px #ccc;
+}
+.infoshow input:focus{
+	border-color: #fcc828;
+}
+.infoshow input[type=submit]{
+	border:solid 1px #fcc828; 
+	background-color: #faa838;
+	cursor: pointer;
+	width: 80px;
+	height: 40px;
+	padding: 4px 8px;
+	border-radius: 2px;
+}
+.upfile{
+	position: absolute;
+	height: 100px !important;
+	width: 100px !important;
+	cursor: pointer;
+}
+.usericon{
+	height: 100px;
+	width:100px;
+	cursor: pointer;
+}
+
+
+/*TABLE*/
+
+.orderinfo{
+	margin-top: 10px;
+}
+.ordertable{
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+}
+.tabhead th{
+	padding: 4px 0px;
+}
+.tabtitle{
+	width: 30%;
+}
+.tabprice{
+	width: 14%;
+}
+.tabcount{
+	width: 14%;
+}
+.tabsum{
+	width: 14%;
+}
+.tabstate{
+	width: 14%;
+}
+.tabtext{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.tabtitle img{
+	float: left;
+	width: 90px;
+	margin-right: 10px;
+}
+.tabprice,.tabcount,.tabsum{
+	width: 100px;
+}
+td.tabsum{
+	color: red;
+}
+td.tabdel input{
+	width: auto;
+	height: auto;
+}
+.tableborder td{
+	background: #b2d1ff;
+    height: 3px;
+    border-right: 2px solid #fff;
+}
+.tableborder td:last-child{
+	border-right:0px;
+}
+
+.tabinfo td{
+	padding: 10px;
+}
+.orderop{
+	position: absolute;
+	right: 60px;
+	bottom: 30px;
+}
+
+
+/*地址信息*/
+
+.addresslist{
+	display: block;
+	margin-top: 20px;
+}
+.addresslist:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.addresspanel{
+	box-shadow: none;
+    background-color: #fff;
+    border: solid 1px;
+    height: auto;
+    padding-bottom: 30px;
+    width: 32%;
+    margin-right: 2%;
+    line-height: 30px;
+    cursor: pointer;
+    border: solid 1px #eee;
+}
+
+.addressactive{
+	border:solid 1px #b2d1ff;
+}
+.addresspanel:nth-child(3n+1){
+	clear: left;
+}
+.addresspanel:nth-child(3n){
+	margin-right: 0px;
+}
+
+.selected{
+	border-color: #fcc828;
+}
+#addrIn{
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	z-index: 20;
+	padding: 30px 60px;
+	background-color: #fff;
+	text-align: center;
+	display: none;
+}
+#addrIn input{
+	margin-top: 20px;
+}

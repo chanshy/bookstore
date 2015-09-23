@@ -1,0 +1,328 @@
+
+/*
+	2015/09/17  verseion 1.0
+	公共组件部分
+*/
+
+/* navbar组件*/
+
+body{
+	-webkit-font-smoothing: antialiased;
+    background-color: whitesmoke;
+    color: #333333;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.navbar{
+	background-color: #fff;
+}
+
+.navbar-fixed{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+}
+
+.toolbar{
+	padding:9px;
+	display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.toolbar-widget{
+	padding: 6px;
+	display: inline-block;
+}
+
+.toolbar-widget i{
+	font-size: 18px;
+}
+.toolbar-widget img{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+}
+.toolbar-title{
+	font-size: 20px;
+    line-height: 24px;
+    padding: 12px;
+    display: inline-block;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    flex-grow: 1;
+    -ms-flex-positive: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.center{
+	text-align: center;
+}
+
+.sidebar{
+	position:fixed;
+	background: rgba(0,0,0,0.5); 
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+.sidebar.active{
+	opacity: 1;
+	visibility: visible;
+}
+.sidemenu{
+	position: fixed;
+	left: 0;
+	top:0;
+	bottom: 0;
+	z-index: 1001;
+	width: 300px;
+	padding-top: 20px;
+	background-color: #fff;
+	border-left:#eee;
+	text-align: left;
+	font-size: 16px;
+	overflow: hidden;
+	transition:transform 0.3s ease-in-out;
+	
+	transform:translateX(-100%);
+}
+
+.active .sidemenu{
+	transition:transform 0.3s ease-in-out;
+	transform:translateX(0);
+}
+.sidemenu li{
+	margin-left: 30px;
+}
+.sidemenu li:hover a{
+	color: #fcc828;
+}
+.sidemenu li:hover i{
+	color:#fcc828;
+}
+.sidemenu li i{
+	font-size: 18px;
+	line-height: 40px;
+	color: #333;
+	vertical-align: baseline;
+	margin-right: 50px;
+}
+.sidemenu img{
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	line-height: 40px;
+	margin-right: 50px;
+}
+.logout span{
+	line-height: 40px;
+}
+/* panel 组件*/
+
+.panel{
+	position: relative;
+	margin-bottom: 16px;
+	float: left;
+	display: block;
+	margin-right: 2.35765%;
+	padding: 10px 20px;
+	width: 23.23176%;
+	height: 300px;
+	border-radius: 2px;
+	box-shadow: 10px 10px 10px #f1f1f1;
+	background-color: #fff;
+}
+
+.panelmedia{
+	position: relative;
+	height: 200px;
+	text-align: center;
+	margin-bottom: 10px;
+
+}
+
+.cover{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	height: 210px;
+	background-color: rgba(0,0,0,0.3);
+	cursor: pointer;
+	display: none;
+	opacity: 0;
+	transition:display 0.3s ease-in-out,opacity 0.3s ease-in-out;
+}
+.panel:hover .cover{
+	display: block;
+	opacity: 1;
+}
+.panelcontent div{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.bookauthor{
+	color: #888;
+}
+.bookprice{
+	color: #fcc828;
+}
+
+/* 表单组件*/
+
+fieldset{
+	position: relative;
+}
+
+i.formicon{
+	position: absolute;
+	bottom: 5px;
+	vertical-align: text-bottom;
+	font-size: 20px;
+}
+
+.loginform{
+	border:none;
+	border-bottom: solid 1px #eee;
+	margin-top: 15px;
+	padding:5px 0px 5px 30px;
+	text-indent: 2px;
+	width: 100%;
+	font-size: 16px;
+}
+
+.loginform:focus{
+	border-bottom:solid 1px #fcc828;
+	outline: none;
+}
+
+
+/* btn组件*/
+
+.btn{
+	position: relative;
+	padding: 6px 12px;
+	border-radius: 2px;
+	background: transparent;
+	color: #333;
+	overflow: hidden;
+	outline: none;
+	vertical-align: -webkit-baseline-middle;
+}
+
+.btn-default{
+	border:none;
+}
+
+.btn-default:hover{
+	background-color: #eee;
+}
+
+.btn-submit{
+	border: solid 1px #333;
+}
+.btn-submit{
+	background-color: #eee;
+}
+.btn-big{
+	padding: 10px 22px;
+}
+.btn-icon{
+	border-radius: 50%;
+	padding: 6px;
+}
+.btn-icon:hover{
+	background-color: #eee;
+}
+.btn-block{
+	width: 100%;
+	display: block;
+	text-align: center;
+	cursor:inherit;
+}
+.btn-block:hover{
+	background-color: #eee;
+}
+
+.btn-price{
+	background-color: #fcc828;
+}
+.btn-price:hover{
+	background-color: #fbb000;
+}
+/* 提示信息*/
+
+.noteinfo{
+	padding: 10px;
+	color: red;
+}
+
+/* 分割线 */
+.divider{	
+	height: 0;
+	border-bottom:solid 1px #aaa; 
+}
+
+/*隐藏显示*/
+
+.hide{
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+.show{
+	display: block;
+	opacity: 1;
+	filter:alpha(opacity=100);
+}
+
+/*底部定义*/
+
+.footer{
+	height: 80px;
+	display: block;
+	background-color:#aaa;
+	margin-top: 20px;
+	padding: 30px 20px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+}
+.container{
+	display: block;
+}
+.copy{
+	display: inline-block;
+}
+.footernav{
+	display: inline-block;
+}
+.footernav li{
+	display: inline-block;
+	color: #fff;
+}
+.footernav a:visited{
+	color: #fff;
+}
+.footernav a:hover{
+	color: #fcc828;
+}

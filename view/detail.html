@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户登录</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="../fonts/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../fonts/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1442835366_2342465.css">
+   	<link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/detail.css">
+</head>
+<body>
+	<div class="navbar navbar-fixed">
+		<div class="toolbar">
+			<div class="toolbar-widget" id="menu">
+				<a href="javascript:" class="btn btn-icon"><i class="iconfont icon-menu"></i></a>
+			</div>
+			<div class="toolbar-title"><a href="/">BookStore</a></div>
+			<div class="toolbar-widget">
+				<a href="./regist.html" class="btn btn-default">注册</a>
+			</div>
+			<div class="toolbar-widget">
+				<a href="./login.html" class="btn btn-default">登录</a>
+			</div>
+		</div>
+
+		<nav class="sidebar" id="sidebar">
+			<ul class="sidemenu" id="sidemenu">
+				<li><a href="../index.html"><i class="iconfont icon-home"></i>首页</a></li>
+				<li><a href=""><i class="iconfont icon-buy"></i>购买</a></li>
+				<li><a href="./regist.html"><i class="iconfont icon-reg"></i>注册</a></li>
+				<li><a href="./login.html"><i class="iconfont icon-login"></i>登录</a></li>
+				<li class="divider"></li>
+				<li><a href=""><i class="iconfont icon-help"></i>帮助</a></li>
+				<li><a href=""><i class="iconfont icon-contact"></i>联系</a></li>
+				<li class="divider"></li>
+				<li>Copyright © 2015</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="detail">
+		<div class="bookinfo">
+			<img src="" class="bookcover">
+			<div class="buy">
+				<div class="bookname"></div>
+				<div class="bookauthor"></div>
+				<div class="counter">
+					<label for="count">购买数量</label>
+					<input type="Number" defaultValue="1" value="1" min="1" name="count" id="counter">
+				</div>
+				<div class="bookprice">
+					<a href="javascript:" class="btn btn-price btn-big" id="buy">购买<span class="price"></span></a>
+				</div>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="bookdesc">
+			
+		</div>
+
+		<div class="affirmorder">
+			<div class="address">
+				<h3>选择收货地址</h3>
+				<ul class="addresslist">
+					
+				</ul>
+				<div class="addressmanage">
+					<a href="javascript:">管理收货地址</a>
+				</div>
+			</div>
+
+			<div class="orderinfo">
+				<h3>确认订单信息</h3>
+				<table class="ordertable">
+					<thead>
+						<tr class="tabhead">
+							<th class="tabtitle">基本信息</th>
+							<th class="tabprice">单价</th>
+							<th class="tabcount">数量</th>
+							<th class="tabsum">合计</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="tableborder">
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="tabinfo">
+							<td class="tabtitle">
+								
+							</td>
+							<td class="tabprice">
+								
+							</td>
+							<td class="tabcount">
+								
+							</td>
+							<td class="tabsum">
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="submitorder">
+				<input type="reset" class="btn btn-submit" value = "取消订单" id="resetorder">
+				<input type="submit" class="btn btn-submit" value= "提交订单" id="pushorder">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://cn.avoscloud.com/scripts/lib/av-0.5.0.min.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+	<script type="text/javascript" src="../js/widget.js"></script>
+	<script type="text/javascript" src="../js/detail.js"></script>
+</body>
+</html>

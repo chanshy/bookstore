@@ -1,0 +1,152 @@
+.detail{
+	position: relative;
+	width: 1000px;
+	min-height: 700px;
+	margin: 100px auto;
+	background-color: #fff;
+	box-shadow: 10px 10px 10px #f1f1f1;
+	padding: 30px 60px;
+
+}
+
+.bookinfo{
+	height: 300px;
+	margin-bottom: 30px;
+}
+
+.bookname{
+	margin: 20px auto;
+}
+
+.bookauthor{
+	margin-bottom: 20px;
+}
+.bookcover{
+	float: left;
+	height: 300px;
+	margin-right: 40px;
+}
+.counter input[type="number"]{
+	width: 60px;
+}
+.bookprice{
+	margin-top: 10px;
+}
+.price{
+	margin-left: 10px;
+}
+.bookdesc{
+	margin-top: 20px;
+}
+
+
+.affirmorder{
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	padding: 30px 60px;
+	background-color: #f1f1f1;
+	min-height: 100%;
+	display: none;
+}
+.addresslist{
+	display: block;
+	margin-top: 20px;
+}
+.addresslist:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.addresspanel{
+	box-shadow: none;
+    background-color: #fff;
+    border: solid 1px;
+    height: auto;
+    padding-bottom: 30px;
+    width: 32%;
+    margin-right: 2%;
+    line-height: 30px;
+    cursor: pointer;
+    border: solid 1px #eee;
+}
+
+.addressactive{
+	border:solid 1px #b2d1ff;
+}
+.addresspanel:nth-child(3n+1){
+	clear: left;
+}
+.addresspanel:nth-child(3n){
+	margin-right: 0px;
+}
+
+.addressmanage{
+	text-align: right;
+}
+.addressmanage a{
+	color: #b2d1ff;
+}
+
+
+.orderinfo{
+	margin-top: 10px;
+}
+.ordertable{
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+}
+.tabhead th{
+	padding: 4px 0px;
+}
+.tabtitle{
+	width: 40%;
+}
+.tabprice{
+	width: 20%;
+}
+.tabcount{
+	width: 20%;
+}
+.tabsum{
+	width: 20%;
+}
+
+.tabtext{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.tabtitle img{
+	float: left;
+	width: 90px;
+	margin-right: 10px;
+}
+.tabprice,.tabcount,.tabsum{
+	width: 100px;
+}
+td.tabsum{
+	color: red;
+}
+.tableborder td{
+	background: #b2d1ff;
+    height: 3px;
+    border-right: 2px solid #fff;
+}
+.tableborder td:last-child{
+	border-right:0px;
+}
+
+.tabinfo td{
+	padding: 10px;
+}
+
+.submitorder{
+	margin-top: 20px;
+	text-align: right;
+}
+.submitorder input[type="submit"]{
+	background-color: #b2d1ff;
+}
