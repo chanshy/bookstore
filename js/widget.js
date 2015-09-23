@@ -44,7 +44,7 @@ function loginPageInit(current){
 	navuser.children[0].remove();
 	var sidedom = "<a href=\"\" onclick=\"logout()\" class=\"logout\"><img src=\""+current.attributes.userIcon+"\"><span>登出</span></a>";
 	sideuser.insertAdjacentHTML("beforeend",sidedom);
-	var navdom = "<a href=\"../view/usercenter.html?"+current.id+"\" class=\"usercenter\"><img src=\""+current.attributes.userIcon+"\"></>";
+	var navdom = "<a href=\"/bookstore/view/usercenter.html?"+current.id+"\" class=\"usercenter\"><img src=\""+current.attributes.userIcon+"\"></>";
 	navuser.insertAdjacentHTML("beforeend",navdom);
 }
 function logoutPageInit(){
@@ -52,8 +52,8 @@ function logoutPageInit(){
 	var navuser = document.querySelector(".toolbar-widget:last-child");
 	sideuser.children[0].remove();
 	navuser.children[0].remove();
-	sideuser.insertAdjacentHTML("beforeend","<a href=\"../view/login.html\"><i class=\"iconfont icon-login\"></i>登录</a>");
-	navuser.insertAdjacentHTML("beforeend","<a href=\"../view/login.html\" class=\"btn btn-default\">登录</a>");
+	sideuser.insertAdjacentHTML("beforeend","<a href=\"/bookstore/view/login.html\"><i class=\"iconfont icon-login\"></i>登录</a>");
+	navuser.insertAdjacentHTML("beforeend","<a href=\"/bookstore/view/login.html\" class=\"btn btn-default\">登录</a>");
 }
 
 function logout(){
