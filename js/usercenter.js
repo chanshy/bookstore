@@ -106,7 +106,7 @@ function loadOrderInfo(){
 	order.equalTo("userId",current.id);
 	order.find({
 		success: function(results) {
-			if(results > 0) {
+			if(results.length > 0) {
 				loadOrderDom(results);
 			}else {
 				document.getElementById("show").innerHTML = '<h1 class="noteinfo">没有订单信息！</h1>';
